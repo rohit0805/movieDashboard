@@ -1,0 +1,28 @@
+.genresContainer {
+  display: flex;
+  overflow-x: scroll;
+  gap: 2px 16px;
+}
+
+.genreButton {
+  white-space: nowrap;
+  margin-bottom: 10px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.genreSelected {
+  animation-duration: 400ms;
+  animation-name: backgroundChange;
+  background-color: #E50914;
+  border-color: #E50914;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: inherit;
+    border-color: inherit;
+  }
+}
